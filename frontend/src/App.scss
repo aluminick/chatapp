@@ -30,9 +30,6 @@ p {
 #container .container{
   max-width: 800px;
 }
-.message.row {
-  margin-bottom: 10px;
-}
 .message p {
   display: inline-block;
 }
@@ -55,10 +52,10 @@ p {
   background: #0079b2;
 }
 .message.others + .message.own, .message.own + .message.others {
-  margin-bottom: 10px;
+  margin-top: 10px;
 } 
-.message.own + .message.own {
-  margin-bottom: 5px;
+.message.own + .message.own, .message.others + .message.others {
+  margin-top: 5px;
 }
 // main content (END)
 
