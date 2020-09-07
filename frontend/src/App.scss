@@ -1,13 +1,14 @@
 @import "~bootstrap/scss/bootstrap";
 
-html, body, #root {
-  height: 100%;
+html, body {
+  min-height: 100vh;
 }
 p {
   margin: 0;
 }
 
 // todo: message grouping by users
+// viewport
 
 // main content (START)
 #container {
@@ -36,7 +37,7 @@ p {
 .message .w-msg {
   word-break: break-word;
 }
-.message.own, .message.own .w-msg {
+.message.own, .message.own .w-msg, .message.own .w-sender  {
   display: flex;
   justify-content: flex-end;
 }
@@ -56,6 +57,12 @@ p {
 } 
 .message.own + .message.own, .message.others + .message.others {
   margin-top: 5px;
+}
+.w-sender span {
+  font-size: 12px;
+  color: #535353;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 // main content (END)
 
